@@ -1,0 +1,20 @@
+[package]
+name = "BoopTest"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+gpu = ["cust"]
+default = []
+
+[dependencies]
+anchor-client = "0.31.1"
+solana-sdk = "2.2.2"
+solana-client = "2.2.7"
+rand = "0.8.5"
+serde_json = "1.0.140"
+rayon = "1.10.0"
+sha2 = "0.10.8"
+ed25519-dalek = "2.0"
+cust = { version = "0.3.2", optional = true }
+hex = "0.4"
